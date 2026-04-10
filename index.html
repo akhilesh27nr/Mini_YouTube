@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YouTube</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="icon" href="pics/new-youtube-logo-logo-svgrepo-com.svg">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header">
+    <div class="header-start">
+      <button class="hamburger" id="hamburgerBtn">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+      <div class="yt-logo" id="logoBtn">
+        <img src="pics/new-youtube-logo-logo-svgrepo-com.svg" alt="YT">
+        <span class="yt-logo-text">YouTube</span>
+      </div>
+    </div>
+
+    <div class="header-center">
+      <div class="search-form" id="searchForm">
+        <input class="search-input" id="searchInput" type="text" placeholder="Search" autocomplete="off">
+        <button class="search-btn" id="searchBtn">
+          <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        </button>
+        <div class="search-autocomplete" id="searchAC"></div>
+      </div>
+      <button class="voice-btn" id="voiceBtn" title="Search with your voice">
+        <svg viewBox="0 0 24 24"><path d="M12 14c1.66 0 2.99-1.34 2.99-3L15 5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3zm5.3-3c0 3-2.54 5.1-5.3 5.1S6.7 14 6.7 11H5c0 3.41 2.72 6.23 6 6.72V21h2v-3.28c3.28-.48 6-3.3 6-6.72h-1.7z"/></svg>
+      </button>
+    </div>
+
+    <div class="header-end">
+      <button class="header-icon-btn" id="uploadBtn" title="Create">
+        <svg viewBox="0 0 24 24"><path d="M14 13h-3v3H9v-3H6v-2h3V8h2v3h3v2zm3-6H3v12h14v-6.39l4 1.83V8.56l-4 1.83V7m1-1v3.83L22 8v8l-4-1.83V18H2V6h16z"/></svg>
+      </button>
+      <button class="header-icon-btn" id="notiBtn" title="Notifications">
+        <svg viewBox="0 0 24 24"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2zm-2 1H8v-6c0-2.48 1.51-4.5 4-4.5s4 2.02 4 4.5v6z"/></svg>
+        <span class="badge" id="notiBadge">3</span>
+      </button>
+      <button class="avatar-btn" id="avatarBtn">
+        <span id="avatarLetter">?</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== SIDEBAR ===== -->
+  <nav class="sidebar" id="sidebar">
+    <div class="sidebar-item active" data-page="home">
+      <svg viewBox="0 0 24 24"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg>
+      <span class="sidebar-item-text">Home</span>
+    </div>
+    <div class="sidebar-item" data-page="explore">
+      <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93s3.05-7.44 7-7.93v15.86zm2-15.86c1.03.13 2 .45 2.87.93H13v-.93zM13 7h5.24c.25.31.48.65.68 1H13V7zm0 3h6.74c.08.33.15.66.19 1H13v-1zm0 3h6.93c-.04.34-.11.66-.19 1H13v-1zm0 3h5.92c-.2.35-.43.69-.68 1H13v-1zm0 3h2.87c-.87.48-1.84.8-2.87.93V19z"/></svg>
+      <span class="sidebar-item-text">Explore</span>
+    </div>
+    <div class="sidebar-item" data-page="trending">
+      <svg viewBox="0 0 24 24"><path d="M17.53 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C13.33 7.26 13 5.65 13.6 4c-1.4.65-2.48 1.65-3.18 2.83-.39.65-.62 1.33-.69 2.02-.05.56-.02 1.13.11 1.65.13.51.35.97.65 1.38.08.11.05.27-.04.36-.06.06-.17.1-.26.06-.13-.05-.24-.17-.31-.3C9.1 10.56 8.89 8.7 9.62 7.1c-1.87 1.35-2.91 3.54-2.86 5.78.02.68.12 1.36.35 2C7.37 15.65 7.71 16.4 8.17 17.07c1 1.48 2.64 2.45 4.39 2.78.34.06.68.1 1.03.12.36.02.72 0 1.07-.06 2.44-.42 4.38-2.3 4.96-4.68.1-.39.15-.79.15-1.19 0-1.14-.37-2.2-.97-3.1l-.27-.31z"/></svg>
+      <span class="sidebar-item-text">Trending</span>
+    </div>
+    <div class="sidebar-item" data-page="shorts">
+      <svg viewBox="0 0 24 24"><path d="M10 14.65v-5.3L15 12l-5 2.65zm7.77-4.33c-.77-.32-1.2-.5-1.2-.5L18 9.06c1.84-.96 2.53-3.23 1.56-5.06s-3.24-2.53-5.07-1.56L6 6.94c-1.29.68-2.07 2.04-2 3.49.07 1.42.93 2.67 2.22 3.25.03.01 1.2.5 1.2.5L6 14.93c-1.83.97-2.53 3.24-1.56 5.07.97 1.83 3.24 2.53 5.07 1.56l8.5-4.5c1.29-.68 2.06-2.04 1.99-3.49-.07-1.42-.94-2.68-2.23-3.25z"/></svg>
+      <span class="sidebar-item-text">Shorts</span>
+    </div>
+    <div class="sidebar-item" data-page="music">
+      <svg viewBox="0 0 24 24"><path d="M12 3v10.55c-.59-.34-1.27-.55-2-.55-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4V7h4V3h-6z"/></svg>
+      <span class="sidebar-item-text">Music</span>
+    </div>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-heading">You</div>
+    <div class="sidebar-item" data-page="history">
+      <svg viewBox="0 0 24 24"><path d="M13 3c-4.97 0-9 4.03-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42C8.27 19.99 10.51 21 13 21c4.97 0 9-4.03 9-9s-4.03-9-9-9zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"/></svg>
+      <span class="sidebar-item-text">History</span>
+    </div>
+    <div class="sidebar-item" data-page="playlists">
+      <svg viewBox="0 0 24 24"><path d="M15 6H3v2h12V6zm0 4H3v2h12v-2zM3 16h8v-2H3v2zM17 6v8.18c-.31-.11-.65-.18-1-.18-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3V8h3V6h-5z"/></svg>
+      <span class="sidebar-item-text">Playlists</span>
+    </div>
+    <div class="sidebar-item" data-page="liked">
+      <svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+      <span class="sidebar-item-text">Liked</span>
+    </div>
+    <div class="sidebar-divider"></div>
+    <div class="sidebar-item" data-page="settings">
+      <svg viewBox="0 0 24 24"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.07.62-.07.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+      <span class="sidebar-item-text">Settings</span>
+    </div>
+  </nav>
+
+  <!-- ===== MAIN CONTENT ===== -->
+  <div class="main-content" id="mainContent">
+
+    <!-- HOME PAGE -->
+    <div class="page active" id="page-home">
+      <div class="chips-bar" id="chipsBar"></div>
+      <div class="video-grid" id="videoGrid"></div>
+    </div>
+
+    <!-- EXPLORE PAGE -->
+    <div class="page" id="page-explore">
+      <div class="page-heading">Explore</div>
+      <div id="exploreContent"></div>
+    </div>
+
+    <!-- TRENDING PAGE -->
+    <div class="page" id="page-trending">
+      <div class="page-heading">Trending</div>
+      <div class="trending-tabs" id="trendingTabs"></div>
+      <div id="trendingList"></div>
+    </div>
+
+    <!-- SHORTS PAGE -->
+    <div class="page page-shorts-full" id="page-shorts">
+      <div class="shorts-feed" id="shortsFeed"></div>
+    </div>
+
+    <!-- MUSIC PAGE -->
+    <div class="page" id="page-music">
+      <div class="page-heading">YouTube Music</div>
+      <div class="music-container" id="musicContainer"></div>
+    </div>
+
+    <!-- HISTORY PAGE -->
+    <div class="page" id="page-history">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+        <div class="page-heading" style="padding-bottom:0;">Watch History</div>
+        <button class="action-btn-single" id="clearHistoryBtn">Clear all watch history</button>
+      </div>
+      <div id="historyList"></div>
+    </div>
+
+    <!-- PLAYLISTS PAGE -->
+    <div class="page" id="page-playlists">
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:16px;">
+        <div class="page-heading" style="padding-bottom:0;">Playlists</div>
+        <button class="action-btn-single" id="newPlaylistBtn">+ New playlist</button>
+      </div>
+      <div class="playlist-grid" id="playlistGrid"></div>
+      <div id="playlistDetail" style="display:none;"></div>
+    </div>
+
+    <!-- LIKED PAGE -->
+    <div class="page" id="page-liked">
+      <div class="page-heading">Liked videos</div>
+      <div id="likedList"></div>
+    </div>
+
+    <!-- SETTINGS PAGE -->
+    <div class="page" id="page-settings">
+      <div class="page-heading">Settings</div>
+      <div class="settings-grid" id="settingsContent"></div>
+    </div>
+
+    <!-- CHANNEL PAGE -->
+    <div class="page" id="page-channel">
+      <div id="channelContent"></div>
+    </div>
+
+    <!-- STUDIO PAGE -->
+    <div class="page" id="page-studio">
+      <div class="page-heading">YouTube Studio</div>
+      <div id="studioContent"></div>
+    </div>
+
+  </div>
+
+  <!-- ===== WATCH PAGE (replaces main content) ===== -->
+  <div class="watch-page" id="watchPage">
+    <div class="watch-primary">
+      <button class="watch-back-btn" id="watchBackBtn" title="Go back">
+        <svg viewBox="0 0 24 24"><path d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg>
+        Back
+      </button>
+      <div class="watch-player"><iframe id="watchPlayer" allowfullscreen allow="autoplay; encrypted-media; picture-in-picture"></iframe></div>
+      <h1 class="watch-title" id="watchTitle"></h1>
+      <div class="watch-info-row">
+        <div class="watch-channel-section">
+          <div class="watch-channel-avatar" id="watchChAvatar"></div>
+          <div class="watch-channel-info">
+            <div class="watch-channel-name" id="watchChName"></div>
+            <div class="watch-channel-subs" id="watchChSubs"></div>
+          </div>
+          <button class="sub-btn not-subscribed" id="watchSubBtn">Subscribe</button>
+        </div>
+        <div class="watch-actions">
+          <div class="action-btn-group">
+            <button class="action-btn" id="likeBtn">
+              <svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z"/></svg>
+              <span id="likeCount">Like</span>
+            </button>
+            <div class="action-btn-sep"></div>
+            <button class="action-btn" id="dislikeBtn">
+              <svg viewBox="0 0 24 24"><path d="M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z"/></svg>
+            </button>
+          </div>
+          <button class="action-btn-single" id="shareBtn">
+            <svg viewBox="0 0 24 24"><path d="M15 5.63L20.66 12 15 18.37V14h-1c-3.96 0-7.14 1-9.75 3.09 1.84-4.07 5.11-6.4 9.89-7.1l.86-.13V5.63M14 3v6C6.22 10.13 3.11 15.33 2 21c2.78-3.97 6.44-6 12-6v6l8-9-8-9z"/></svg>
+            Share
+          </button>
+          <button class="action-btn-single" id="saveBtn">
+            <svg viewBox="0 0 24 24"><path d="M14 10H2v2h12v-2zm0-4H2v2h12V6zm4 8v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zM2 16h8v-2H2v2z"/></svg>
+            Save
+          </button>
+        </div>
+      </div>
+      <div class="watch-description" id="watchDesc">
+        <div class="watch-desc-stats" id="watchDescStats"></div>
+        <div class="watch-desc-text" id="watchDescText"></div>
+      </div>
+      <div class="comments-section">
+        <div class="comments-header" id="commentsHeader">Comments</div>
+        <div class="comment-form">
+          <div class="comment-form-avatar" id="commentAvatar">?</div>
+          <div class="comment-form-input-wrap">
+            <input class="comment-input" id="commentInput" placeholder="Add a comment...">
+            <div class="comment-form-actions">
+              <button class="comment-cancel-btn" id="commentCancel">Cancel</button>
+              <button class="comment-submit-btn" id="commentSubmit">Comment</button>
+            </div>
+          </div>
+        </div>
+        <div id="commentsList"></div>
+      </div>
+    </div>
+    <div class="watch-secondary" id="watchSidebar"></div>
+  </div>
+
+  <!-- ===== MINI PLAYER ===== -->
+  <div class="mini-player" id="miniPlayer">
+    <div class="mini-player-video"><iframe id="miniPlayerIframe"></iframe></div>
+    <div class="mini-player-bar">
+      <div class="mini-player-info">
+        <div class="mini-player-title" id="miniTitle"></div>
+        <div class="mini-player-channel" id="miniChannel"></div>
+      </div>
+      <button class="mini-player-btn" id="miniExpand" title="Expand">⬆</button>
+      <button class="mini-player-btn" id="miniClose" title="Close">✕</button>
+    </div>
+  </div>
+
+  <!-- ===== MUSIC PLAYER BAR ===== -->
+  <div class="music-player-bar" id="musicBar">
+    <div class="music-bar-inner">
+      <div class="music-now-info">
+        <img class="music-now-thumb" id="musicNowThumb" src="" alt="">
+        <div class="music-now-text">
+          <div class="music-now-title" id="musicNowTitle">—</div>
+          <div class="music-now-artist" id="musicNowArtist">—</div>
+        </div>
+      </div>
+      <div class="music-center-col">
+        <div class="music-controls">
+          <button class="music-ctrl-btn" id="musicShuffle" title="Shuffle">
+            <svg viewBox="0 0 24 24"><path d="M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"/></svg>
+          </button>
+          <button class="music-ctrl-btn" id="musicPrev" title="Previous">
+            <svg viewBox="0 0 24 24"><path d="M6 6h2v12H6zm3.5 6l8.5 6V6z"/></svg>
+          </button>
+          <button class="music-ctrl-btn music-play-btn" id="musicPlayPause" title="Play">
+            <svg id="musicPlayIcon" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            <svg id="musicPauseIcon" viewBox="0 0 24 24" style="display:none"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+          </button>
+          <button class="music-ctrl-btn" id="musicNext" title="Next">
+            <svg viewBox="0 0 24 24"><path d="M6 18l8.5-6L6 6v12zM16 6v12h2V6h-2z"/></svg>
+          </button>
+          <button class="music-ctrl-btn" id="musicRepeat" title="Repeat">
+            <svg viewBox="0 0 24 24"><path d="M7 7h10v3l4-4-4-4v3H5v6h2V7zm10 10H7v-3l-4 4 4 4v-3h12v-6h-2v4z"/></svg>
+          </button>
+        </div>
+        <div class="music-progress-row">
+          <span class="music-time-label" id="musicCurrent">0:00</span>
+          <div class="music-seek-wrap">
+            <input type="range" class="music-seek-range" id="musicSeek" min="0" max="1000" value="0">
+            <div class="music-seek-fill" id="musicSeekFill"></div>
+          </div>
+          <span class="music-time-label" id="musicTotal">0:00</span>
+        </div>
+      </div>
+      <div class="music-bar-end">
+        <button class="music-ctrl-btn" id="musicVolBtn" title="Volume">
+          <svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg>
+        </button>
+        <button class="music-ctrl-btn music-close-btn" id="musicCloseBtn" title="Close player">
+          <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== SHORTS COMMENTS PANEL ===== -->
+  <div class="shorts-comments-panel" id="shortsCommentsPanel">
+    <div class="shorts-cp-header">
+      <span class="shorts-cp-title">Comments</span>
+      <button class="shorts-cp-close" id="shortsCpClose">
+        <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+      </button>
+    </div>
+    <div class="shorts-cp-list" id="shortsCpList"></div>
+    <div class="shorts-cp-input-row">
+      <div class="shorts-cp-avatar" id="shortsCpAvatar">?</div>
+      <input class="shorts-cp-input" id="shortsCpInput" placeholder="Add a comment…">
+      <button class="shorts-cp-send" id="shortsCpSend">
+        <svg viewBox="0 0 24 24"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="shorts-cp-backdrop" id="shortsCpBackdrop"></div>
+
+  <!-- ===== SHARE MODAL ===== -->
+  <div class="modal-overlay" id="shareModal">
+    <div class="modal-box">
+      <button class="modal-close" id="shareClose">✕</button>
+      <div class="modal-title">Share</div>
+      <div class="share-social-row" id="shareSocial"></div>
+      <div class="share-link-row">
+        <input class="share-link-input" id="shareLinkInput" readonly>
+        <button class="share-copy-btn" id="shareCopyBtn">Copy</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PLAYLIST MODAL ===== -->
+  <div class="modal-overlay" id="playlistModal">
+    <div class="modal-box">
+      <button class="modal-close" id="playlistClose">✕</button>
+      <div class="modal-title">Save to playlist</div>
+      <div id="playlistCheckList"></div>
+      <div class="playlist-create-inline">
+        <input id="newPlName" placeholder="Create new playlist">
+        <button id="newPlBtn">Create</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== AUTH MODAL ===== -->
+  <div class="modal-overlay" id="authModal">
+    <div class="modal-box auth-modal-box">
+      <button class="modal-close" id="authClose">✕</button>
+      <div class="modal-title" id="authTitle">Sign in</div>
+      <div class="auth-form" id="authForm">
+        <input class="auth-input" id="authName" placeholder="Name" style="display:none;">
+        <input class="auth-input" id="authEmail" placeholder="Email" type="email">
+        <input class="auth-input" id="authPassword" placeholder="Password" type="password">
+        <button class="auth-submit-btn" id="authSubmitBtn">Sign in</button>
+        <div class="auth-toggle" id="authToggle">Don't have an account? Register</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== NOTIFICATION PANEL ===== -->
+  <div class="noti-panel" id="notiPanel">
+    <div class="noti-panel-header">
+      <div class="noti-panel-title">Notifications</div>
+      <button class="modal-close" id="notiClose">✕</button>
+    </div>
+    <div id="notiList"></div>
+  </div>
+
+  <div id="ytMusicPlayerDiv" style="display:none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

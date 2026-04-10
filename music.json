@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "title": "Kesariya",
+    "artist": "Arijit Singh",
+    "album": "Brahmastra",
+    "language": "Hindi",
+    "genre": "Bollywood",
+    "duration": "4:28",
+    "videoId": "BddP6PYo2gs",
+    "thumbnail": "https://img.youtube.com/vi/BddP6PYo2gs/mqdefault.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Agar Tum Saath Ho",
+    "artist": "Arijit Singh & Alka Yagnik",
+    "album": "Tamasha",
+    "language": "Hindi",
+    "genre": "Bollywood",
+    "duration": "5:41",
+    "videoId": "6SGRn9OHtFY",
+    "thumbnail": "https://img.youtube.com/vi/6SGRn9OHtFY/mqdefault.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Kajra Re",
+    "artist": "Alisha Chinai, Shankar Mahadevan",
+    "album": "Bunty Aur Babli",
+    "language": "Hindi",
+    "genre": "Bollywood",
+    "duration": "8:02",
+    "videoId": "4dsFQFCvVGU",
+    "thumbnail": "https://img.youtube.com/vi/4dsFQFCvVGU/mqdefault.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Tum Hi Ho",
+    "artist": "Arijit Singh",
+    "album": "Aashiqui 2",
+    "language": "Hindi",
+    "genre": "Bollywood",
+    "duration": "4:22",
+    "videoId": "WWZxDA81JFk",
+    "thumbnail": "https://img.youtube.com/vi/WWZxDA81JFk/mqdefault.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Bahara",
+    "artist": "Shreya Ghoshal",
+    "album": "I Hate Luv Storys",
+    "language": "Hindi",
+    "genre": "Bollywood",
+    "duration": "4:30",
+    "videoId": "7N74i_rAfFE",
+    "thumbnail": "https://img.youtube.com/vi/7N74i_rAfFE/mqdefault.jpg"
+  },
+  {
+    "id": 6,
+    "title": "Sooraj Dooba Hain",
+    "artist": "Arijit Singh & Aditi Singh Sharma",
+    "album": "Roy",
+    "language": "Hindi",
+    "genre": "Bollywood",
+    "duration": "4:25",
+    "videoId": "nJZcbidTutE",
+    "thumbnail": "https://img.youtube.com/vi/nJZcbidTutE/mqdefault.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Naguva Nayana",
+    "artist": "S. P. Balasubrahmanyam & S. Janaki",
+    "album": "Pallavi Anu Pallavi",
+    "language": "Kannada",
+    "genre": "Classic Sandalwood",
+    "duration": "4:10",
+    "videoId": "AJSeaFthdeE",
+    "thumbnail": "https://img.youtube.com/vi/AJSeaFthdeE/mqdefault.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Anisuthide Yaako Indu",
+    "artist": "Sonu Nigam",
+    "album": "Mungaru Male",
+    "language": "Kannada",
+    "genre": "Sandalwood",
+    "duration": "4:55",
+    "videoId": "nlsLKA6hlVQ",
+    "thumbnail": "https://img.youtube.com/vi/nlsLKA6hlVQ/mqdefault.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Minchagi Neenu",
+    "artist": "Sonu Nigam",
+    "album": "Gaalipata",
+    "language": "Kannada",
+    "genre": "Sandalwood",
+    "duration": "5:13",
+    "videoId": "zecRgZYi-kw",
+    "thumbnail": "https://img.youtube.com/vi/zecRgZYi-kw/mqdefault.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Toofan",
+    "artist": "Ravi Basrur & Various Artists",
+    "album": "KGF Chapter 2",
+    "language": "Kannada",
+    "genre": "Sandalwood",
+    "duration": "3:34",
+    "videoId": "f2dTfaNm4n4",
+    "thumbnail": "https://img.youtube.com/vi/f2dTfaNm4n4/mqdefault.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Blinding Lights",
+    "artist": "The Weeknd",
+    "album": "After Hours",
+    "language": "English",
+    "genre": "Pop",
+    "duration": "3:20",
+    "videoId": "4NRXx6U8ABQ",
+    "thumbnail": "https://img.youtube.com/vi/4NRXx6U8ABQ/mqdefault.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Shape of You",
+    "artist": "Ed Sheeran",
+    "album": "÷ (Divide)",
+    "language": "English",
+    "genre": "Pop",
+    "duration": "3:53",
+    "videoId": "JGwWNGJdvx8",
+    "thumbnail": "https://img.youtube.com/vi/JGwWNGJdvx8/mqdefault.jpg"
+  },
+  {
+    "id": 13,
+    "title": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "album": "A Night at the Opera",
+    "language": "English",
+    "genre": "Rock",
+    "duration": "5:55",
+    "videoId": "fJ9rUzIMcZQ",
+    "thumbnail": "https://img.youtube.com/vi/fJ9rUzIMcZQ/mqdefault.jpg"
+  },
+  {
+    "id": 14,
+    "title": "Hotel California",
+    "artist": "Eagles",
+    "album": "Hotel California",
+    "language": "English",
+    "genre": "Rock",
+    "duration": "6:30",
+    "videoId": "BciS5krYL80",
+    "thumbnail": "https://img.youtube.com/vi/BciS5krYL80/mqdefault.jpg"
+  },
+  {
+    "id": 15,
+    "title": "Levitating",
+    "artist": "Dua Lipa",
+    "album": "Future Nostalgia",
+    "language": "English",
+    "genre": "Pop",
+    "duration": "3:23",
+    "videoId": "TUVcZfQe-Kw",
+    "thumbnail": "https://img.youtube.com/vi/TUVcZfQe-Kw/mqdefault.jpg"
+  },
+  {
+    "id": 16,
+    "title": "Anti-Hero",
+    "artist": "Taylor Swift",
+    "album": "Midnights",
+    "language": "English",
+    "genre": "Pop",
+    "duration": "3:20",
+    "videoId": "b1kbLwvqugk",
+    "thumbnail": "https://img.youtube.com/vi/b1kbLwvqugk/mqdefault.jpg"
+  },
+  {
+    "id": 17,
+    "title": "Rolling in the Deep",
+    "artist": "Adele",
+    "album": "21",
+    "language": "English",
+    "genre": "Soul",
+    "duration": "3:48",
+    "videoId": "rYEDA3JcQqw",
+    "thumbnail": "https://img.youtube.com/vi/rYEDA3JcQqw/mqdefault.jpg"
+  },
+  {
+    "id": 18,
+    "title": "Someone Like You",
+    "artist": "Adele",
+    "album": "21",
+    "language": "English",
+    "genre": "Soul",
+    "duration": "4:45",
+    "videoId": "hLQl3WQQoQ0",
+    "thumbnail": "https://img.youtube.com/vi/hLQl3WQQoQ0/mqdefault.jpg"
+  },
+  {
+    "id": 19,
+    "title": "Uptown Funk",
+    "artist": "Mark Ronson ft. Bruno Mars",
+    "album": "Uptown Special",
+    "language": "English",
+    "genre": "Funk",
+    "duration": "4:30",
+    "videoId": "OPf0YbXqDm0",
+    "thumbnail": "https://img.youtube.com/vi/OPf0YbXqDm0/mqdefault.jpg"
+  },
+  {
+    "id": 20,
+    "title": "Sunflower",
+    "artist": "Post Malone & Swae Lee",
+    "album": "Hollywood's Bleeding",
+    "language": "English",
+    "genre": "Hip-Hop",
+    "duration": "2:38",
+    "videoId": "ApXoWvfEYVU",
+    "thumbnail": "https://img.youtube.com/vi/ApXoWvfEYVU/mqdefault.jpg"
+  }
+]

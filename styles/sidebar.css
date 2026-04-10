@@ -1,0 +1,38 @@
+.sidebar{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top:60px;
+    width: 72px;
+    background-color: white;
+    z-index: 200;
+    padding-top: 5px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+}
+.sidebar:hover{
+    scrollbar-color: #ccc transparent;
+}
+.sidebar-link{
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    transition: background .12s;
+}
+.sidebar-link:hover{
+    background-color: rgb(232, 230, 230);
+}
+.sidebar-link img{
+    height: 25px;
+    margin-bottom: 4px;
+}
+.sidebar-link div{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+
+}

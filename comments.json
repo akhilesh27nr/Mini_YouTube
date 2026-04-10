@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "videoId": 1,
+    "userId": 1,
+    "userName": "John Doe",
+    "text": "Great video! Very helpful.",
+    "timestamp": "2024-03-22T10:30:00Z",
+    "likes": 5
+  },
+  {
+    "id": 2,
+    "videoId": 1,
+    "userId": 2,
+    "userName": "Jane Smith",
+    "text": "Thanks for sharing this content!",
+    "timestamp": "2024-03-22T11:00:00Z",
+    "likes": 3
+  },
+  {
+    "id": 3,
+    "videoId": 2,
+    "userId": 1,
+    "userName": "John Doe",
+    "text": "Can you make more tutorials like this?",
+    "timestamp": "2024-03-22T12:15:00Z",
+    "likes": 2
+  },
+  {
+    "id": 4,
+    "videoId": 1,
+    "userId": 1,
+    "userName": "User",
+    "text": "good one",
+    "timestamp": "2026-04-04T08:26:20.884Z",
+    "likes": 0
+  }
+]

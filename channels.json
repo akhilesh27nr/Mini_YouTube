@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "name": "freeCodeCamp",
+    "subscribers": 8900000,
+    "thumbnail": "pics/ch_pic_3.jpg",
+    "description": "Learn to code for free with tutorials and full courses"
+  },
+  {
+    "id": 2,
+    "name": "Kurzgesagt – In a Nutshell",
+    "subscribers": 22000000,
+    "thumbnail": "pics/ch_pic_4.jpg",
+    "description": "Science videos with beautiful animation"
+  },
+  {
+    "id": 3,
+    "name": "Programming with Mosh",
+    "subscribers": 4100000,
+    "thumbnail": "pics/ch_pic_5.jpg",
+    "description": "Programming tutorials for beginners and professionals"
+  },
+  {
+    "id": 4,
+    "name": "MadFit",
+    "subscribers": 7400000,
+    "thumbnail": "pics/ch_pic_6.jpg",
+    "description": "Fun home workouts and fitness routines"
+  },
+  {
+    "id": 5,
+    "name": "Blender Foundation",
+    "subscribers": 1200000,
+    "thumbnail": "pics/ch_pic_7.jpg",
+    "description": "Official channel of the Blender open-source 3D software"
+  },
+  {
+    "id": 6,
+    "name": "MrBeast",
+    "subscribers": 345000000,
+    "thumbnail": "",
+    "description": "World's biggest YouTuber - epic challenges, philanthropy, and stunts"
+  },
+  {
+    "id": 7,
+    "name": "Dude Perfect",
+    "subscribers": 60000000,
+    "thumbnail": "",
+    "description": "Epic trick shots, battles, and stereotypes"
+  },
+  {
+    "id": 8,
+    "name": "Mark Rober",
+    "subscribers": 51000000,
+    "thumbnail": "",
+    "description": "Former NASA engineer making science fun with creative builds"
+  },
+  {
+    "id": 9,
+    "name": "Babish Culinary Universe",
+    "subscribers": 10000000,
+    "thumbnail": "",
+    "description": "Recreating food from movies, shows, and pop culture"
+  },
+  {
+    "id": 10,
+    "name": "Yes Theory",
+    "subscribers": 9000000,
+    "thumbnail": "",
+    "description": "Seeking discomfort through incredible adventures worldwide"
+  },
+  {
+    "id": 11,
+    "name": "Veritasium",
+    "subscribers": 16000000,
+    "thumbnail": "",
+    "description": "Science and engineering explained with stunning visuals"
+  },
+  {
+    "id": 12,
+    "name": "Corridor Crew",
+    "subscribers": 17000000,
+    "thumbnail": "",
+    "description": "VFX artists react to CGI and create mind-blowing visual effects"
+  },
+  {
+    "id": 13,
+    "name": "Mark Wiens",
+    "subscribers": 12000000,
+    "thumbnail": "",
+    "description": "The ultimate food travel vlogger exploring street food worldwide"
+  }
+]

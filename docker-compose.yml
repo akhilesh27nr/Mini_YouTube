@@ -1,0 +1,28 @@
+version: '3.8'
+
+services:
+  youtube-clone:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: youtube-clone-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    networks:
+      - youtube-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s
+
+networks:
+  youtube-network:
+    driver: bridge

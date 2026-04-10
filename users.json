@@ -1,0 +1,97 @@
+[
+  {
+    "id": 1,
+    "email": "john@example.com",
+    "password": "password123",
+    "name": "John Doe",
+    "createdAt": "2024-03-20T10:00:00Z",
+    "settings": {
+      "notificationsEnabled": true,
+      "darkMode": false,
+      "commentsEnabled": true,
+      "profilePrivacy": "public"
+    },
+    "subscriptions": [
+      1,
+      2,
+      4,
+      3,
+      8,
+      9
+    ]
+  },
+  {
+    "id": 2,
+    "email": "jane@example.com",
+    "password": "password456",
+    "name": "Jane Smith",
+    "createdAt": "2024-03-21T10:00:00Z",
+    "settings": {
+      "notificationsEnabled": true,
+      "darkMode": true,
+      "commentsEnabled": true,
+      "profilePrivacy": "public"
+    },
+    "subscriptions": [
+      1,
+      4,
+      5
+    ]
+  },
+  {
+    "id": 3,
+    "email": "akhil@gmail.com",
+    "password": "akhil@admin",
+    "name": "akhilesh",
+    "createdAt": "2026-04-01T08:31:42.525Z",
+    "settings": {
+      "notificationsEnabled": true,
+      "darkMode": false,
+      "commentsEnabled": true,
+      "profilePrivacy": "public"
+    },
+    "subscriptions": []
+  },
+  {
+    "id": 4,
+    "email": "akhilesh@gmail.com",
+    "password": "$2b$10$3BFKXLOjqT5YGdEO3ABnNeAxu5nO1oE7f.2jVIQ.hGBtjBzYuDGlG",
+    "name": "Akhilesh N R",
+    "createdAt": "2026-04-04T13:29:54.477Z",
+    "settings": {
+      "notificationsEnabled": true,
+      "darkMode": false,
+      "commentsEnabled": true,
+      "profilePrivacy": "public"
+    },
+    "subscriptions": []
+  },
+  {
+    "id": 5,
+    "email": "a@gmail.com",
+    "password": "$2b$10$QumZwSy5zkYQUZ5/u8f/i.C9lioDGDhb8IHYVOF7ARc8WoYIyzwoO",
+    "name": "Akhilesh",
+    "createdAt": "2026-04-09T20:18:50.626Z",
+    "settings": {
+      "notificationsEnabled": true,
+      "darkMode": false,
+      "commentsEnabled": true,
+      "profilePrivacy": "public"
+    },
+    "subscriptions": []
+  },
+  {
+    "id": 6,
+    "email": "ifhkgugug@gmail.com",
+    "password": "$2b$10$yjROuQkSunXm.MvN/BvCneJx7P19mjYymnxdRbP.TNBGRROBc4MSq",
+    "name": "iouyiuyopi",
+    "createdAt": "2026-04-10T19:44:56.883Z",
+    "settings": {
+      "notificationsEnabled": true,
+      "darkMode": false,
+      "commentsEnabled": true,
+      "profilePrivacy": "public"
+    },
+    "subscriptions": []
+  }
+]
