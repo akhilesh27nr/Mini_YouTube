@@ -1,5 +1,7 @@
 # YouTube Clone - Mini YouTube
 
+🚀 **Live Demo:** https://mini-youtube-7eax.onrender.com
+
 A full-featured YouTube clone application with all core YouTube functionalities. Watch videos, explore channels, manage playlists, comment, and interact with content just like YouTube.
 
 ---
